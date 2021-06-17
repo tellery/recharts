@@ -1,6 +1,6 @@
 {
-  "name": "recharts",
-  "version": "2.0.9",
+  "name": "@tellery/recharts",
+  "version": "2.0.10",
   "description": "React charts",
   "main": "lib/index",
   "module": "es6/index",
@@ -41,7 +41,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/recharts/recharts.git"
+    "url": "git+https://github.com/recharts/recharts.git"
   },
   "author": "recharts group",
   "bugs": {
@@ -133,5 +133,8 @@
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  }
 }
