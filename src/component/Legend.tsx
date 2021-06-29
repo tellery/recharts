@@ -28,7 +28,9 @@ function renderContent(content: ContentType, props: Props) {
     return React.cloneElement(content, props);
   }
   if (_.isFunction(content)) {
-    return React.createElement(content as any, props);
+    const Content = content as any;
+    // TODO: report a strange bug
+    return <Content {...props} />;
   }
 
   const { ref, ...otherProps } = props;
